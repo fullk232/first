@@ -343,85 +343,6 @@ function randomVal(min, max, num){
     return aData;
 }
 
-var chartDiv3 = {
-    type : 'bar',
-    backgroundColor : "#FFF",
-    plot : {
-        lineColor : "rgba(151,187,205,1)",
-        lineWidth : "2px",
-        backgroundColor2 : "rgba(151,187,205,1)",
-        marker : {
-            backgroundColor : "rgba(151,187,205,1)",
-            borderColor : "white",
-            shadow : false
-        }
-    },
-    plotarea : {
-        backgroundColor : "white"
-    },
-    scaleX : {
-      lineColor : colors.gray,
-      lineWidth : "1px",
-      tick : {
-          lineColor : "#C7C7C7",
-          lineWidth : "1px"
-      },
-      guide :{
-          lineStyle : 'solid',
-          lineColor : colors.gray,
-          alpha : 1
-      },
-      item : {
-          color: colors.grayDark
-      }
-    },
-    scaleY : {
-      lineColor : colors.gray,
-      lineWidth : "1px",
-      tick : {
-          lineColor : "#C7C7C7",
-          lineWidth : "1px"
-      },
-        guide :{
-          lineStyle : 'solid',
-          lineColor : colors.gray,
-          alpha : 1
-      },
-      item : {
-          color: colors.grayDark
-      }
-    },
-    series : [
-        {
-            values : randomVal(22,42,8),
-            lineColor : "rgba(220,220,220,1)",
-            lineWidth : "2px",
-            alpha : 0.5,
-            borderWidth : "2px",
-            borderColor : "#C7C7C7",
-            borderTop : "2px solid #C7C7C7",
-            borderBottom : "0px",
-            backgroundColor1 : "rgba(220,220,220,1)",
-            backgroundColor2 : "rgba(220,220,220,1)",
-            marker : {
-                backgroundColor : "rgba(220,220,220,1)",
-            }
-
-        },
-        {
-            alpha : 0.5,
-            values : randomVal(7,32,8),
-            backgroundColor1 : colors.blue,
-            backgroundColor2 : colors.blue,
-            borderWidth : "2px",
-            borderColor : colors.blue,
-            borderTop : "2px solid " + colors.blue,
-            borderBottom : "0px"
-        }
-    ]
-}
-
-
 
 window.onload=function(){
 zingchart.render({
@@ -437,11 +358,4 @@ zingchart.render({
      width:550
    });
    };
-   zingchart.render({
-    id : 'chartDiv3',
-    data : chartDiv3,
-    hideprogresslogo : true,
-    height : 500,
-    width: 725
-})
 });
