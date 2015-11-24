@@ -1,0 +1,48 @@
+body {
+  width: 550px;
+  background-color: #FAFAFA;
+  margin: 0 auto;
+}
+
+h1 {
+  background-color: #FAFAFA;
+  font-family: Helvetica;
+  color: black;
+  text-align: left;
+  font-size: 24px;
+  padding-top: 8px;
+  padding-left: 30px;
+}
+
+p {
+  background-color: #FAFAFA;
+  font-family: Helvetica;
+  font-size: 11px;
+  color: black;
+  text-align: left;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-left: 31px;
+  width: 89%;
+  position: relative;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #333;
+  background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+a:link {
+    color: #3B82FB;
+}
+
+a:visited {
+    color: #3B82FB;
+}
+
+a:hover {
+    color: black;
+}
